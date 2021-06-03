@@ -24,14 +24,27 @@
 
 
 
-for(let i = 0; i <= 100; i++){
-   for(let x = 1; x < i; x++){
-      if(i % x == 0) continue;
-      console.log('простое :' + i + ' ' + ' Делители этого числа: 1 и ' + i);
-   }
+// for(let i = 1; i <= 100; i++){
+//    for(let x = 1; x < i; x++){
+//       if(i % x == 0) continue;
+//       console.log('простое :' + i + ' ' + ' Делители этого числа: 1 и ' + i);
+//    }
 
    
-};
+// };
 
 
-  
+
+
+
+
+let isStr = function(str){
+   if(typeof str !== 'string'){
+      alert('Это не строка!');
+      return;
+   }
+
+   str = str.trim();
+   return str.length > 50 ? str.slice(0,50) + '...' : str;
+}
+alert(isStr('    привет приветприветприветприветприветприветприветприветприветприветприветприветприветприветприветприветприветприветприветпривет '));
